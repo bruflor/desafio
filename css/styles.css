@@ -14,11 +14,12 @@
 .user-navbar {
   background: var(--gray-light);
   color: var(--dark);
-  padding: 16px 0px;
+  padding: 0.8rem;
 }
 .user-navbar a {
   color: var(--gray-dark);
   text-decoration: none;
+  font-size: 1.5rem;
 }
 .user-navbar a:hover {
   color: var(--dark);
@@ -29,15 +30,18 @@
 .navbar-icon {
   font-size: 1.5rem;
 }
+.container-logo {
+  display: flex;
+  align-items: center;
+}
 .logo {
-  height: 40px;
-  font-size: 1.5rem;
+  height: 32px;
 }
 
 /* menu */
 .menu {
   display: flex;
-  margin: 24px auto;
+  margin: 24px auto 0;
   gap: 16px;
   max-width: 1320px;
   color: var(--gray-medium);
@@ -68,10 +72,24 @@
   color: var(--gray-dark);
 }
 
+/* breadcrumbs */
+.breadcrumb-item a {
+  /* background: green; */
+  font-size: 0.8rem;
+  color: var(--gray-medium);
+}
+
 /* product carousel images */
-.product-carousel {
-  height: 640px;
-  position: relative;
+@media screen and (max-width: 770px) {
+  .product-galery-carousel {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .product-galery-carousel {
+    height: 640px;
+    position: relative;
+  }
 }
 .descount-tag {
   background: var(--dark);
