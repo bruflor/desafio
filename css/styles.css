@@ -14,7 +14,7 @@
 .user-navbar {
   background: var(--gray-light);
   color: var(--dark);
-  padding: 8px 0px;
+  padding: 16px 0px;
 }
 .user-navbar a {
   color: var(--gray-dark);
@@ -23,9 +23,16 @@
 .user-navbar a:hover {
   color: var(--dark);
   font-weight: 400;
+  /* font-size: 2rem; */
+  /* height: 1.5rem; */
 }
+.navbar-icon {
+  font-size: 1.5rem;
+}
+
 .logo {
   height: 40px;
+  font-size: 1.5rem;
 }
 
 /* menu */
