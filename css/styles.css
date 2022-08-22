@@ -37,7 +37,6 @@
   /* margin: auto; */
   max-width: 1320px;
 }
-
 .menu a {
   text-align: left;
   color: var(--gray-dark);
@@ -46,11 +45,9 @@
 }
 .menu a:hover {
   color: var(--dark);
-
   text-decoration: underline;
   text-decoration-thickness: 3px;
 }
-
 a {
   text-decoration: none;
   color: var(--gray-dark);
@@ -81,7 +78,7 @@ a {
   border-radius: 4px;
   display: block;
 }
-.colors .active {
+.select-option.active {
   box-shadow: 0 0 0 3px white, 0 0 0 5px var(--red);
 }
 .color-bdot1 {
@@ -89,4 +86,47 @@ a {
 }
 .color-bdot2 {
   background: var(--blue);
+}
+
+/* slider cards similar product */
+@media screen and (min-width: 770px) {
+  .cards-wrapper {
+    display: flex;
+  }
+  .card {
+    margin: 0 0.5rem;
+    width: calc(100% / 3);
+    height: 100%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+
+.carret {
+  background: var(--gray-light);
+  margin: 0 32px;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+}
+.carret i {
+  color: var(--gray-dark);
+  font-size: 2rem;
+}
+.image-wrapper {
+  height: 32vh;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-wrapper img {
+  max-width: 100%;
+  object-fit: cover;
+  /* max-height: 100%; */
 }
