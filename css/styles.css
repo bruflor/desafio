@@ -53,6 +53,25 @@ a {
   color: var(--gray-dark);
 }
 
+/* product carousel images */
+.product-carousel {
+  height: 640px;
+  position: relative;
+}
+.descount-tag {
+  background: var(--dark);
+  color: var(--red);
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  z-index: 1;
+  right: 0;
+  margin-top: 48px;
+  height: 80px;
+  width: calc(100vw / 4);
+  max-width: 160px;
+  padding: 16px;
+}
 /* options */
 .price {
   font-weight: 700;
