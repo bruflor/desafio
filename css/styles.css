@@ -95,7 +95,7 @@ a {
   }
   .card {
     margin: 0 0.5rem;
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     height: 100%;
   }
 }
