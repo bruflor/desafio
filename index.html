@@ -5,10 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Target Store - Bruna Flôr</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./custom.scss">
-
+    <!-- my custom css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- icons package -->
     <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
 
@@ -16,47 +18,73 @@
 
     <header>
         <!-- user navbar -->
-        <nav class="navbar navbar-expand-lg bg-dark">
+        <nav class="navbar navbar-expand-lg user-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a href="#">
+                    <img class="logo" src="./assets/logo_svg.svg" alt="logo target store">
+                    Target Store</a>
                 <div>
-                    <a>heart</a>
-                    <a>cart</a>
-                    <a>user</a>
+                    <a href="#"><i class="ph-heart-straight"></i></a>
+                    <a href="#"><i class="ph-shopping-cart"></i></a>
+                    <a href="#"><i class="ph-user"></i></a>
                 </div>
             </div>
         </nav>
         <!-- menu -->
-        <nav class="bg-light">
-            <div>
-                <a>BÁSICOS</a>
-                <a>ÍNTIMO</a>
-                <a>ESPORTIVO</a>
-                <a>MODA PRAIA</a>
-                <a>PIJAMAS</a>
-                <a>CALÇADOS</a>
-                <a>ACESSÓRIOS</a>
-            </div>
-            <div>
-                <a>OFERTAS</a>
-                <a>NOVIDADES</a>
-                <a>GÊNERO FLUÍDO</a>
-                <a>FEMININO</a>
-                <a>MASCULINO</a>
-                <a>INFANTIL</a>
-                <a>CONJUNTOS</a>
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="container-fluid">
+                <p class="navbar-brand d-md-none">CATEGORIAS:</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="ph-list"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BÁSICOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ÍNTIMO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ESPORTIVO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MODA PRAIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">PIJAMAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CALÇADOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ACESSÓRIOS</a>
+                        </li>
+
+                    </ul>
+                </div>
+
             </div>
         </nav>
-
     </header>
     <main class="container">
 
-        <div class="teste">abacaxi</div>
         <!-- product image and options row -->
-        <div class="row">
+        <div class="row my-4">
+            <!-- breadcrumb -->
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">PIJAMAS</a></li>
+                    <li class="breadcrumb-item"><a href="#">OFERTAS</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">FEMININO</li>
+                </ol>
+            </nav>
+
             <div class="col-md-8 ">
                 <!-- product image -->
-                <div class="row border rounded my-4 g-0 overflow-hidden">
+                <div class="row border rounded  g-0 overflow-hidden">
                     <div id="product-galery" class="carousel slide" style="height: 646px ;" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -248,9 +276,8 @@
                 <img src="./assets/img-3.jpg" class="card-img-top" alt="Mulher com pijama vermelho">
             </div>
             <div class=" card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <h5 class="card-title">Pijama comprido de pavão</h5>
+                <p class="card-text"></p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>

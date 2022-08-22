@@ -1,0 +1,53 @@
+:root {
+  --red: #f4364c;
+  --green: #00ae7c;
+  --blue: #2d56aa;
+  --white: #ffffff;
+  --gray-light: #edeeef;
+  --gray-medium: #9c9ea4;
+  --gray-dark: #555964;
+  --dark: #272c3a;
+}
+/* var(--white) */
+
+/* navbar */
+.user-navbar {
+  background: var(--gray-light);
+  color: var(--dark);
+  padding: 8px 0px;
+}
+.user-navbar a {
+  color: var(--gray-dark);
+  text-decoration: none;
+}
+.user-navbar a:hover {
+  color: var(--dark);
+  font-weight: 400;
+}
+.logo {
+  height: 40px;
+}
+
+/* menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto;
+  gap: 16px;
+  /* margin: auto; */
+  max-width: 1320px;
+}
+
+.menu a {
+  text-align: left;
+  color: var(--gray-dark);
+  font-size: 16px;
+  text-decoration: none;
+  padding-left: 0;
+}
+.menu a:hover {
+  color: var(--dark);
+
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
