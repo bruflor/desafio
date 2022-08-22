@@ -29,7 +29,6 @@
 .navbar-icon {
   font-size: 1.5rem;
 }
-
 .logo {
   height: 40px;
   font-size: 1.5rem;
@@ -38,25 +37,34 @@
 /* menu */
 .menu {
   display: flex;
-  flex-direction: column;
   margin: 24px auto;
   gap: 16px;
-  /* margin: auto; */
   max-width: 1320px;
+  color: var(--gray-medium);
+  font-size: 1.5rem;
 }
 .menu a {
   text-align: left;
   color: var(--gray-dark);
   font-size: 16px;
   padding-left: 0;
+  text-decoration: none;
 }
 .menu a:hover {
   color: var(--dark);
   text-decoration: underline;
   text-decoration-thickness: 3px;
 }
-a {
-  text-decoration: none;
+.menu a:focus {
+  color: var(--red);
+}
+
+.menu button {
+  color: var(--gray-medium);
+  align-self: center;
+}
+.menu button:focus {
+  box-shadow: none;
   color: var(--gray-dark);
 }
 
