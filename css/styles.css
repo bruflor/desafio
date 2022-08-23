@@ -56,10 +56,13 @@ h4 {
 .menu {
   display: flex;
   margin: 24px auto 0;
-  gap: 16px;
+  gap: 32px;
   max-width: 1320px;
   color: var(--gray-medium);
   font-size: 1.5rem;
+}
+.navbar-nav {
+  gap: 16px;
 }
 .menu a {
   text-align: left;
@@ -140,6 +143,7 @@ h4 {
 }
 .product-name {
   display: flex;
+  justify-content: space-between;
   gap: 16px;
 }
 .product-name a {
@@ -149,8 +153,13 @@ h4 {
   color: var(--dark);
   font-weight: 400;
 }
+.product-name a {
+  max-height: calc(1.375rem + 1.5vw);
+  display: flex;
+  align-items: center;
+}
 .favorite {
-  font-size: 1.5rem;
+  font-size: calc(1.375rem + 1.5vw / 2);
   color: var(--gray-dark);
 }
 .favorite:focus,
