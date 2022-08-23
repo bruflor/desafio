@@ -217,10 +217,12 @@ h4 {
   .select-option {
     width: 48px;
     height: 48px;
+    line-height: 48px;
   }
 }
 @media screen and (max-width: 768px) {
   .select-option {
+    line-height: 32px;
     width: 32px;
     height: 32px;
   }
