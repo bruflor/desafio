@@ -14,6 +14,15 @@ body {
   color: var(--gray-dark);
 }
 
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
 /* navbar */
 .user-navbar {
   background: var(--gray-light);
@@ -92,7 +101,7 @@ body {
 }
 @media screen and (min-width: 769px) {
   .product-galery-carousel {
-    height: 640px;
+    /* height: 640px; */
     position: relative;
   }
 }
@@ -310,7 +319,7 @@ body {
 }
 .delivery-calc input {
   color: var(--gray-medium);
-  border: 1px solid var(--gray-light);
+  border: 2px solid var(--gray-light);
 }
 .delivery-calc input::placeholder {
   color: var(--gray-medium);
@@ -319,6 +328,24 @@ body {
 .delivery-calc input:focus {
   border: 1px solid var(--gray-medium);
 }
+
+/* rate */
+.rate-container {
+  display: flex;
+  align-items: center;
+  color: var(--gray-medium);
+  border-bottom: 3px solid var(--gray-light);
+}
+
+.rate-total {
+  color: #ece200;
+  font-size: 1.5rem;
+}
+.rate {
+  margin-top: 24px;
+  color: #ece200;
+}
+
 /* slider cards similar product */
 @media screen and (min-width: 770px) {
   .cards-wrapper {

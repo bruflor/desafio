@@ -88,7 +88,7 @@
                 </ol>
             </nav>
 
-            <div class="col-md-8 ">
+            <div class="col-md-7 ">
                 <!-- product image -->
                 <div class="row border rounded  g-0 overflow-hidden">
                     <div id="product-galery" class="carousel slide product-galery-carousel" data-bs-touch="false">
@@ -98,21 +98,26 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="false">
-                                <img src="./assets/img-1.jpg" class="d-block w-100" alt="...">
+                                <img src="./assets/img-5.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="./assets/img-2.jpg" class="d-block w-100" alt="...">
+                                <img src="./assets/img-6.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img-7.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#product-galery"
+
+                        <button class="carousel-control-prev carret " type="button" data-bs-target="#product-galery"
                             data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <i class="ph-caret-left" aria-hidden="true"></i>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#product-galery"
+                        <button class="carousel-control-next carret" type="button" data-bs-target="#product-galery"
                             data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <i class="ph-caret-right" aria-hidden="true"></i>
                             <span class="visually-hidden">Next</span>
+                        </button>
                         </button>
                     </div>
                 </div>
@@ -173,7 +178,7 @@
         <div class="row">
 
             <!-- details -->
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <div class="accordion accordion-flush border rounded p-2 my-4" id="product-details">
                     <div class="accordion-item">
                         <h2>Detalhes</h2>
@@ -223,11 +228,11 @@
         </div>
 
         <!-- review -->
-        <div class=" accordion accordion-flush border rounded my-4" id="product-review">
+        <div class="p-2 accordion accordion-flush border rounded my-4" id="product-review">
             <div class="accordion-item">
                 <!-- rate -->
-                <div class="d-flex flex-row">
-                    <div class="p-2">
+                <div class="rate-container">
+                    <div class="rate-total">
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-fill"></i>
@@ -238,28 +243,32 @@
                 </div>
 
                 <div>
-                    <div class="p-2">
+                    <div class="rate">
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-half-fill"></i>
                         <i class="ph-star"></i>
                     </div>
-                    <h4>Title review</h4>
-                    <p>text review</p>
+                    <h4>Ótimo produto</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci perferendis vero dolor
+                        laboriosam laudantium maiores repellat blanditiis ea provident voluptatem possimus,
+                        incidunt nemo doloremque illo voluptas! Provident ipsam odit id.</p>
                 </div>
 
-                <!-- review simulation -->
+                <!-- rate and review simulation -->
                 <div>
-                    <div class="p-2">
+                    <div class="rate">
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-half-fill"></i>
                         <i class="ph-star"></i>
                         <i class="ph-star"></i>
                     </div>
-                    <h4>Title review</h4>
-                    <p>text review</p>
+                    <h4>Bom</h4>
+                    <p>epellat blanditiis ea provident
+                        voluptatem possimus, incidunt nemo doloremque illo voluptas! Provident ipsam odit id.
+                    </p>
                 </div>
 
                 <!-- more reviews -->
@@ -268,51 +277,57 @@
                     <div class="accordion-body p-0">
                         <!-- review simulation -->
                         <div>
-                            <div class="p-2">
+                            <div class="rate">
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-half-fill"></i>
                                 <i class="ph-star"></i>
                                 <i class="ph-star"></i>
                             </div>
-                            <h4>Title review</h4>
-                            <p>text review</p>
+                            <h4>Ótimo produto</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci perferendis vero dolor
+                                laboriosam laudantium maiores repellat blanditiis ea provident voluptatem possimus,
+                                incidunt nemo doloremque illo voluptas! Provident ipsam odit id.</p>
                         </div>
                         <!-- review simulation -->
                         <div>
-                            <div class="p-2">
+                            <div class="rate">
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-half-fill"></i>
                                 <i class="ph-star"></i>
                                 <i class="ph-star"></i>
                             </div>
-                            <h4>Title review</h4>
-                            <p>text review</p>
+                            <h4>Costura fraca, mas bom tecido</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                         </div>
                         <!-- review simulation -->
                         <div>
-                            <div class="p-2">
+                            <div class="rate">
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-half-fill"></i>
                                 <i class="ph-star"></i>
                                 <i class="ph-star"></i>
                             </div>
-                            <h4>Title review</h4>
-                            <p>text review</p>
+                            <h4>Bom</h4>
+                            <p>Lorem ipsum dolor sit laboriosam laudantium maiores repellat blanditiis ea provident
+                                voluptatem possimus, incidunt nemo doloremque illo voluptas! Provident ipsam odit id.
+                            </p>
                         </div>
                         <!-- review simulation -->
                         <div>
-                            <div class="p-2">
+                            <div class="rate">
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-half-fill"></i>
                                 <i class="ph-star"></i>
                                 <i class="ph-star"></i>
                             </div>
-                            <h4>Title review</h4>
-                            <p>text review</p>
+                            <h4>Ótimo produto</h4>
+                            <p> Adipisci perferendis vero dolor
+                                laboriosam laudantium maiores repellat blanditiis ea provident voluptatem possimus,
+                                incidunt nemo doloremque illo voluptas! Provident ipsam odit id.</p>
                         </div>
                     </div>
                 </div>
