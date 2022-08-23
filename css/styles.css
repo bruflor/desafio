@@ -412,7 +412,7 @@ h4 {
 }
 
 .image-wrapper {
-  height: 32vh;
+  /* height: 32vh; */
   overflow: hidden;
   margin: 0 auto;
   display: flex;
