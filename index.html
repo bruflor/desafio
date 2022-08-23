@@ -90,7 +90,7 @@
             <div class="col-md-7 ">
                 <!-- product image -->
                 <div class="row border rounded  g-0 overflow-hidden">
-                    <div id="product-galery" class="carousel slide product-galery-carousel" data-bs-touch="false">
+                    <div id="product-galery" class="carousel slide product-galery-carousel" data-bs-touch="true">
                         <div class="descount-tag">
                             <p>50%</p>
                             <span>off</span>
@@ -337,8 +337,8 @@
             </div>
         </div>
 
-        <!-- similar products carousel -->
-        <div class="row">
+        <!-- similar products carousel wide screens -->
+        <div class="row d-none d-md-block ">
             <h2>Você também pode se interessar por:</h2>
             <div id="similar-product-carousel" class="carousel slide  p-2" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -469,10 +469,100 @@
                 </button>
             </div>
         </div>
-        <br />
-        <br />
+
+        <!-- similar products carousel mobile -->
+        <div class="row d-md-none">
+            <h2>Você também pode se interessar por:</h2>
+
+            <div id="similar-product-carousel-mobile" class="carousel slide  p-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <div class="card rounded">
+                                <div class="image-wrapper">
+                                    <img src="./assets/img-1.jpg" alt="Mulher com pijama com panda">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Pijama com panda</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 29,90</p>
+                                </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card rounded">
+                                <div class="image-wrapper">
+                                    <img src="./assets/img-4.jpg" alt="Chinelinho de dentro de casa">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Chinelinho</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 19,90</p>
+                                </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card rounded">
+                                <div class="image-wrapper">
+                                    <img src="./assets/img-3.jpg" alt="Mulher com pijama com pavão">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Pijama com pavão</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 69,90</p>
+                                </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card rounded">
+                                <div class="image-wrapper">
+                                    <img src="./assets/img-8.jpg" alt="Cachorro amarelo com pijama azul">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Pijama de dog</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 9999,90</p>
+                                </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
 
 
+
+                    <button class="carousel-control-prev carret " type="button"
+                        data-bs-target="#similar-product-carousel-mobile" data-bs-slide="prev">
+                        <i class="ph-caret-left" aria-hidden="true"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carret" type="button"
+                        data-bs-target="#similar-product-carousel-mobile" data-bs-slide="next">
+                        <i class="ph-caret-right" aria-hidden="true"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
 
     </main>
 
