@@ -120,7 +120,7 @@ body {
   margin: 0;
 }
 
-/* options */
+/* product name / heart */
 .product-brand {
   font-size: 1rem;
   color: var(--gray-medium);
@@ -133,7 +133,7 @@ body {
 }
 .product-name h1 {
   font-size: 1.5rem;
-  color: var(--dark);
+  color: var(--gray-dark);
   font-weight: 700;
 }
 .favorite {
@@ -146,18 +146,46 @@ body {
   color: var(--red);
 }
 
-.price {
-  font-weight: 700;
-  margin-top: 5px;
-  font-size: 18px;
+/* payment and price */
+.payment {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+  justify-content: space-between;
 }
-.current {
-  color: var(--red);
-  margin-left: 6px;
-}
-.before {
+.price-before {
+  font-size: 1rem;
+  color: var(--gray-medium);
   text-decoration: line-through;
+  margin: 0;
+  padding: 0;
 }
+.price-current {
+  color: var(--green);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.payment-method a {
+  text-decoration: underline;
+  color: var(--gray-medium);
+  font-size: 0.8rem;
+}
+.payment-method a:hover {
+  color: var(--gray-dark);
+}
+.payment-method div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--gray-dark);
+  font-size: 1rem;
+}
+.payment-method div p {
+  padding: 0;
+  margin: 0;
+}
+
 .color ul {
   list-style: none;
   display: flex;
@@ -171,13 +199,13 @@ body {
   display: block;
 }
 .select-option.active {
-  box-shadow: 0 0 0 3px white, 0 0 0 5px var(--red);
+  box-shadow: 0 0 0 3px white, 0 0 0 5px var(--gray-medium);
 }
 .color-bdot1 {
-  background: var(--red);
+  background: #cdb7f2;
 }
 .color-bdot2 {
-  background: var(--blue);
+  background: #6febf3;
 }
 
 /* slider cards similar product */
