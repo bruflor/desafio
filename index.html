@@ -8,6 +8,12 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- roboto font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+        rel="stylesheet">
     <!-- my custom css -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- icons package -->
@@ -17,20 +23,22 @@
 <body>
 
     <header>
-        <!-- user navbar -->
+        <!-- navbar -->
         <nav class="navbar navbar-expand-lg user-navbar">
             <div class="container-fluid">
-                <a href="#">
+                <a href="#" class="container-logo">
                     <img class="logo" src="./assets/logo_svg.svg" alt="logo target store">
                     Target Store</a>
                 <div>
-                    <a href="#"><i class="ph-heart-straight"></i></a>
-                    <a href="#"><i class="ph-shopping-cart"></i></a>
-                    <a href="#"><i class="ph-user"></i></a>
+                    <a href="#"><i class="ph-heart-straight navbar-icon"></i></a>
+                    <a href="#"><i class="ph-shopping-cart navbar-icon"></i></a>
+                    <a href="#"><i class="ph-user navbar-icon"></i></a>
                 </div>
             </div>
         </nav>
     </header>
+
+
     <main class="container">
         <!-- menu -->
         <nav class="navbar navbar-expand-lg menu">
@@ -39,109 +47,129 @@
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="ph-list"></i></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse p-0" id="navbarNavDropdown">
+                <ul class="navbar-nav p-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">BÁSICOS</a>
+                        <a class="nav-link px-0" href="#">BÁSICOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ÍNTIMO</a>
+                        <a class="nav-link px-0" href="#">ÍNTIMO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ESPORTIVO</a>
+                        <a class="nav-link px-0" href="#">ESPORTIVO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">MODA PRAIA</a>
+                        <a class="nav-link px-0" href="#">MODA PRAIA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">PIJAMAS</a>
+                        <a class="nav-link px-0" aria-current="page" href="#">PIJAMAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CALÇADOS</a>
+                        <a class="nav-link px-0" href="#">CALÇADOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ACESSÓRIOS</a>
+                        <a class="nav-link px-0" href="#">ACESSÓRIOS</a>
                     </li>
 
                 </ul>
             </div>
-
         </nav>
 
         <!-- product image and options row -->
-        <div class="row my-4">
+        <div class="row">
+
             <!-- breadcrumb -->
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <nav class="mb-2" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">PIJAMAS</a></li>
                     <li class="breadcrumb-item"><a href="#">OFERTAS</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">FEMININO</li>
+                    <li class="breadcrumb-item active" aria-current="page"><a>FEMININO</a></li>
                 </ol>
             </nav>
 
-            <div class="col-md-8 ">
+            <div class="col-md-7 ">
                 <!-- product image -->
                 <div class="row border rounded  g-0 overflow-hidden">
-                    <div id="product-galery" class="carousel slide product-carousel" data-bs-touch="false">
+                    <div id="product-galery" class="carousel slide product-galery-carousel" data-bs-touch="true">
                         <div class="descount-tag">
                             <p>50%</p>
                             <span>off</span>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="false">
-                                <img src="./assets/img-1.jpg" class="d-block w-100" alt="...">
+                                <img src="./assets/img-5.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="./assets/img-2.jpg" class="d-block w-100" alt="...">
+                                <img src="./assets/img-6.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img-7.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#product-galery"
+
+                        <button class="carousel-control-prev carret " type="button" data-bs-target="#product-galery"
                             data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <i class="ph-caret-left" aria-hidden="true"></i>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#product-galery"
+                        <button class="carousel-control-next carret" type="button" data-bs-target="#product-galery"
                             data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <i class="ph-caret-right" aria-hidden="true"></i>
                             <span class="visually-hidden">Next</span>
+                        </button>
                         </button>
                     </div>
                 </div>
             </div>
             <!-- product options and info  -->
-            <div class="col-md-4 my-4 ">
-                <p>marca | codigo</p>
-                <h1>Pijama feminino lindo</h1>
-                <span>heart</span>
-                <div>
+            <div class="col-md-5 my-4 ">
+                <p class="product-brand">SKU | sw2107235075511616</p>
+                <div class="product-name">
+                    <h1>Pijama feminino rosa</h1>
+                    <a class="" href="#!"><i class="ph-heart-straight-fill favorite"></i></a>
+                </div>
+                <div class="payment">
                     <div class="price">
-                        <span class="before">R$120</span>
-                        <span class="current">$59,90</span>
+                        <p class="price-before">R$120</p>
+                        <p class="price-current">$59,90</p>
                     </div>
-                    <div>
+                    <div class="payment-method">
                         <div>
                             <i class="ph-credit-card"></i>
                             <p>até 3x de R$19,96</p>
                         </div>
-                        <a>mais formas de pagamento</a>
+                        <a href="#!">mais formas de pagamento</a>
                     </div>
                 </div>
+
+                <!-- colors option -->
                 <div class="controls">
-                    <div class="color">
-                        <h5>color</h5>
+                    <div class="option color">
+                        <h4>Lilás</h4>
                         <ul>
                             <li><a href="#!" class="select-option active color-bdot1 "></a></li>
                             <li><a href="#!" class="select-option color-bdot2"></a></li>
+                            <li><a href="#!" class="select-option color-bdot3"></a></li>
+                        </ul>
+                    </div>
+                    <div class="option">
+                        <h4>Tamanho:</h4>
+                        <ul>
+                            <li><a href="#!" class="select-option">S</a></li>
+                            <li><a href="#!" class="select-option">M</a></li>
+                            <li><a href="#!" class="select-option">G</a></li>
+                            <li><a href="#!" class="select-option">GG</a></li>
+                            <li><a href="#!" class="select-option active">3G</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="footer">
-                    <button type="button">
-                        <i class="ph-shopping-cart"></i>
-                        <span>comprar</span>
-                    </button>
-                    <a href="#!"><i class="ph-share-network"></i></a>
+
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn buy-button" type="button"><i class="ph-shopping-cart"></i>
+
+                        comprar</button>
                 </div>
+
             </div>
         </div>
 
@@ -149,8 +177,8 @@
         <div class="row">
 
             <!-- details -->
-            <div class="col-md-8">
-                <div class="accordion accordion-flush border rounded" id="product-details">
+            <div class="col-md-7">
+                <div class="accordion accordion-flush border rounded p-2 my-4" id="product-details">
                     <div class="accordion-item">
                         <h2>Detalhes</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate adipisci sint
@@ -181,26 +209,29 @@
 
 
             <!-- delivery -->
-            <div class="col-md-4 my-4 ">
-                <div>
-                    <i class="ph-truck"></i>
-                    <h2>Frete grátis</h2>
-                    <p>Para pagamentos em boleto ou pix</p>
-                </div>
-                <span>para outros meios de pagamento</span>
-                <div>
-                    <h2>Calcule seu frete</h2>
-                    <input placeholder="DIGITE SEU CEP" />
+            <div class="col-md-5 my-4">
+                <div class="border rounded p-2">
+                    <div class="delivery-promo">
+                        <i class="ph-truck"></i>
+                        <div>
+                            <h2>Frete grátis</h2>
+                            <p>Para pagamentos em boleto ou pix</p>
+                        </div>
+                    </div>
+                    <div class="delivery-calc">
+                        <h3>Calcule seu frete</h3>
+                        <input class=" form-control" placeholder="DIGITE SEU CEP" />
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- review -->
-        <div class=" accordion accordion-flush border rounded my-4" id="product-review">
+        <div class="p-2 accordion accordion-flush border rounded my-4" id="product-review">
             <div class="accordion-item">
                 <!-- rate -->
-                <div class="d-flex flex-row">
-                    <div class="p-2">
+                <div class="rate-container">
+                    <div class="rate-total">
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-fill"></i>
@@ -211,28 +242,32 @@
                 </div>
 
                 <div>
-                    <div class="p-2">
+                    <div class="rate">
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-half-fill"></i>
                         <i class="ph-star"></i>
                     </div>
-                    <h4>Title review</h4>
-                    <p>text review</p>
+                    <h4>Ótimo produto</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci perferendis vero dolor
+                        laboriosam laudantium maiores repellat blanditiis ea provident voluptatem possimus,
+                        incidunt nemo doloremque illo voluptas! Provident ipsam odit id.</p>
                 </div>
 
-                <!-- review simulation -->
+                <!-- rate and review simulation -->
                 <div>
-                    <div class="p-2">
+                    <div class="rate">
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-fill"></i>
                         <i class="ph-star-half-fill"></i>
                         <i class="ph-star"></i>
                         <i class="ph-star"></i>
                     </div>
-                    <h4>Title review</h4>
-                    <p>text review</p>
+                    <h4>Bom</h4>
+                    <p>epellat blanditiis ea provident
+                        voluptatem possimus, incidunt nemo doloremque illo voluptas! Provident ipsam odit id.
+                    </p>
                 </div>
 
                 <!-- more reviews -->
@@ -241,51 +276,57 @@
                     <div class="accordion-body p-0">
                         <!-- review simulation -->
                         <div>
-                            <div class="p-2">
+                            <div class="rate">
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-half-fill"></i>
                                 <i class="ph-star"></i>
                                 <i class="ph-star"></i>
                             </div>
-                            <h4>Title review</h4>
-                            <p>text review</p>
+                            <h4>Ótimo produto</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci perferendis vero dolor
+                                laboriosam laudantium maiores repellat blanditiis ea provident voluptatem possimus,
+                                incidunt nemo doloremque illo voluptas! Provident ipsam odit id.</p>
                         </div>
                         <!-- review simulation -->
                         <div>
-                            <div class="p-2">
+                            <div class="rate">
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-half-fill"></i>
                                 <i class="ph-star"></i>
                                 <i class="ph-star"></i>
                             </div>
-                            <h4>Title review</h4>
-                            <p>text review</p>
+                            <h4>Costura fraca, mas bom tecido</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                         </div>
                         <!-- review simulation -->
                         <div>
-                            <div class="p-2">
+                            <div class="rate">
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-half-fill"></i>
                                 <i class="ph-star"></i>
                                 <i class="ph-star"></i>
                             </div>
-                            <h4>Title review</h4>
-                            <p>text review</p>
+                            <h4>Bom</h4>
+                            <p>Lorem ipsum dolor sit laboriosam laudantium maiores repellat blanditiis ea provident
+                                voluptatem possimus, incidunt nemo doloremque illo voluptas! Provident ipsam odit id.
+                            </p>
                         </div>
                         <!-- review simulation -->
                         <div>
-                            <div class="p-2">
+                            <div class="rate">
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-fill"></i>
                                 <i class="ph-star-half-fill"></i>
                                 <i class="ph-star"></i>
                                 <i class="ph-star"></i>
                             </div>
-                            <h4>Title review</h4>
-                            <p>text review</p>
+                            <h4>Ótimo produto</h4>
+                            <p> Adipisci perferendis vero dolor
+                                laboriosam laudantium maiores repellat blanditiis ea provident voluptatem possimus,
+                                incidunt nemo doloremque illo voluptas! Provident ipsam odit id.</p>
                         </div>
                     </div>
                 </div>
@@ -296,96 +337,120 @@
             </div>
         </div>
 
-        <!-- similar products carousel -->
-        <div class="row">
+        <!-- similar products carousel wide screens -->
+        <div class="row d-none d-md-block ">
             <h2>Você também pode se interessar por:</h2>
-            <div id="similar-product-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="similar-product-carousel" class="carousel slide  p-2" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="cards-wrapper">
-                            <div class="card">
+                            <div class="card rounded">
                                 <div class="image-wrapper">
-                                    <img src="./assets/img-3.jpg" alt="Mulher com pijama vermelho">
+                                    <img src="./assets/img-1.jpg" alt="Mulher com pijama com panda">
                                 </div>
-                                <div class=" card-body">
-                                    <h5 class="card-title">Pijama comprido de pavão</h5>
-                                    <p class="card-text">R$ 99,90</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Pijama com panda</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 29,90</p>
                                 </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
                             </div>
-                            <div class="card">
+                            <div class="card rounded">
                                 <div class="image-wrapper">
-                                    <img src="./assets/img-3.jpg" alt="Mulher com pijama vermelho">
+                                    <img src="./assets/img-4.jpg" alt="Chinelinho de dentro de casa">
                                 </div>
-                                <div class=" card-body">
-                                    <h5 class="card-title">Pijama comprido de pavão</h5>
-                                    <p class="card-text">R$ 99,90</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Chinelinho</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 19,90</p>
                                 </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
                             </div>
-                            <div class="card">
+                            <div class="card rounded">
                                 <div class="image-wrapper">
-                                    <img src="./assets/img-3.jpg" alt="Mulher com pijama vermelho">
+                                    <img src="./assets/img-3.jpg" alt="Mulher com pijama com pavão">
                                 </div>
-                                <div class=" card-body">
-                                    <h5 class="card-title">Pijama comprido de pavão</h5>
-                                    <p class="card-text">R$ 99,90</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Pijama com pavão</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 69,90</p>
                                 </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
                             </div>
-                            <div class="card">
+                            <div class="card rounded">
                                 <div class="image-wrapper">
-                                    <img src="./assets/img-3.jpg" alt="Mulher com pijama vermelho">
+                                    <img src="./assets/img-8.jpg" alt="Cachorro amarelo com pijama azul">
                                 </div>
-                                <div class=" card-body">
-                                    <h5 class="card-title">Pijama comprido de pavão</h5>
-                                    <p class="card-text">R$ 99,90</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Pijama de dog</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 9999,90</p>
                                 </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item ">
                         <div class="cards-wrapper">
-                            <div class="card">
+                            <div class="card rounded">
                                 <div class="image-wrapper">
-                                    <img src="./assets/img-3.jpg" alt="Mulher com pijama vermelho">
+                                    <img src="./assets/img-1.jpg" alt="Mulher com pijama com panda">
                                 </div>
-                                <div class=" card-body">
-                                    <h5 class="card-title">Pijama comprido de pavão</h5>
-                                    <p class="card-text">R$ 99,90</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Pijama com panda</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 29,90</p>
                                 </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
                             </div>
-                            <div class="card">
+                            <div class="card rounded">
                                 <div class="image-wrapper">
-                                    <img src="./assets/img-3.jpg" alt="Mulher com pijama vermelho">
+                                    <img src="./assets/img-4.jpg" alt="Chinelinho de dentro de casa">
                                 </div>
-                                <div class=" card-body">
-                                    <h5 class="card-title">Pijama comprido de pavão</h5>
-                                    <p class="card-text">R$ 99,90</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Chinelinho</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 19,90</p>
                                 </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
                             </div>
-                            <div class="card">
+                            <div class="card rounded">
                                 <div class="image-wrapper">
-                                    <img src="./assets/img-3.jpg" alt="Mulher com pijama vermelho">
+                                    <img src="./assets/img-3.jpg" alt="Mulher com pijama com pavão">
                                 </div>
-                                <div class=" card-body">
-                                    <h5 class="card-title">Pijama comprido de pavão</h5>
-                                    <p class="card-text">R$ 99,90</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Pijama com pavão</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 69,90</p>
                                 </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
                             </div>
-                            <div class="card">
+                            <div class="card rounded">
                                 <div class="image-wrapper">
-                                    <img src="./assets/img-3.jpg" alt="Mulher com pijama vermelho">
+                                    <img src="./assets/img-8.jpg" alt="Cachorro amarelo com pijama azul">
                                 </div>
-                                <div class=" card-body">
-                                    <h5 class="card-title">Pijama comprido de pavão</h5>
-                                    <p class="card-text">R$ 99,90</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Pijama de dog</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 9999,90</p>
                                 </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
@@ -405,23 +470,102 @@
             </div>
         </div>
 
+        <!-- similar products carousel mobile -->
+        <div class="row d-md-none">
+            <h2>Você também pode se interessar por:</h2>
+
+            <div id="similar-product-carousel-mobile" class="carousel slide  p-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <div class="card rounded">
+                                <div class="image-wrapper">
+                                    <img src="./assets/img-1.jpg" alt="Mulher com pijama com panda">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Pijama com panda</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 29,90</p>
+                                </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card rounded">
+                                <div class="image-wrapper">
+                                    <img src="./assets/img-4.jpg" alt="Chinelinho de dentro de casa">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Chinelinho</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 19,90</p>
+                                </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card rounded">
+                                <div class="image-wrapper">
+                                    <img src="./assets/img-3.jpg" alt="Mulher com pijama com pavão">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Pijama com pavão</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 69,90</p>
+                                </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card rounded">
+                                <div class="image-wrapper">
+                                    <img src="./assets/img-8.jpg" alt="Cachorro amarelo com pijama azul">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title-container">
+                                        <h5 class="card-title">Pijama de dog</h5>
+                                        <i class="ph-heart-straight favorite"></i>
+                                    </div>
+                                    <p class="card-text">R$ 9999,90</p>
+                                </div>
+                                <a href="#!" class="btn-card btn btn-primary"><i class="ph-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
 
 
 
+                    <button class="carousel-control-prev carret " type="button"
+                        data-bs-target="#similar-product-carousel-mobile" data-bs-slide="prev">
+                        <i class="ph-caret-left" aria-hidden="true"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carret" type="button"
+                        data-bs-target="#similar-product-carousel-mobile" data-bs-slide="next">
+                        <i class="ph-caret-right" aria-hidden="true"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
