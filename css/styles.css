@@ -1,6 +1,7 @@
 :root {
   --red: #f4364c;
   --green: #00ae7c;
+  --green-dark: #009a6e;
   --blue: #2d56aa;
   --white: #ffffff;
   --gray-light: #edeeef;
@@ -129,20 +130,18 @@ body {
 }
 .product-name {
   display: flex;
-  /* text-transform: Uppercase; */
-
   gap: 16px;
 }
+.product-name a {
+  text-decoration: none;
+}
 .product-name h1 {
-  /* font-size: 1.5rem; */
   color: var(--gray-dark);
   font-weight: 400;
 }
 .favorite {
   font-size: 1.5rem;
-  /* padding: 8px; */
   color: var(--gray-dark);
-  text-decoration: none;
 }
 .favorite:focus,
 .favorite:hover {
@@ -220,7 +219,6 @@ body {
   box-shadow: 0 0 0 3px white, 0 0 0 5px var(--gray-medium);
   color: var(--gray-medium);
 }
-
 .option ul {
   list-style: none;
   display: flex;
@@ -245,6 +243,36 @@ body {
 }
 .color-bdot3 {
   background: #fff;
+}
+
+/* buy button */
+@media screen and (max-width: 770px) {
+  .d-md-block {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+  }
+  .buy-button {
+    border-radius: 0;
+  }
+}
+.buy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  margin-top: 32px;
+  background: var(--green);
+  color: #fff;
+  font-size: 1.5rem;
+}
+.buy-button:hover {
+  color: #fff;
+  background: var(--green-dark);
 }
 
 /* slider cards similar product */
