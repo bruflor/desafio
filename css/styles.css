@@ -315,6 +315,7 @@ h4 {
 }
 .delivery-calc {
   padding-top: 8px;
+  margin: 12px 0;
   color: var(--gray-medium);
 }
 .delivery-calc input {
@@ -359,22 +360,45 @@ h4 {
 }
 @media screen and (max-width: 769px) {
   .card:not(:first-child) {
-    display: none;
+    /* display: none; */
   }
 }
-
-.carret {
-  background: var(--gray-light);
-  margin: 0 32px;
-  width: 6vh;
-  height: 6vh;
-  border-radius: 50%;
-  top: 50%;
+.card {
+  overflow: hidden;
 }
-.carret i {
-  color: var(--gray-dark);
+.card-title-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  color: var(--gray-medium);
+}
+.card-title {
+  font-size: 1rem;
+}
+.card-text {
   font-size: 2rem;
+  font-weight: 700;
 }
+.btn-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  /* margin: 0 -1rem; */
+  border-radius: 0;
+  border: none;
+  /* width: 100%; */
+  font-size: 2rem;
+  background: var(--gray-medium);
+}
+.btn-card:hover,
+.btn-card:active,
+.btn-card:focus {
+  background: var(--gray-dark);
+  box-shadow: none;
+}
+
 .image-wrapper {
   height: 32vh;
   overflow: hidden;
@@ -387,4 +411,18 @@ h4 {
   max-width: 100%;
   object-fit: cover;
   /* max-height: 100%; */
+}
+
+/* carret for caroulsels */
+.carret {
+  background: var(--gray-light);
+  margin: 0 32px;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+}
+.carret i {
+  color: var(--gray-dark);
+  font-size: 2rem;
 }
