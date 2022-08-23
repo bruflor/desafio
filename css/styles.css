@@ -129,15 +129,18 @@ body {
 }
 .product-name {
   display: flex;
+  /* text-transform: Uppercase; */
+
   gap: 16px;
 }
 .product-name h1 {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color: var(--gray-dark);
-  font-weight: 700;
+  font-weight: 400;
 }
 .favorite {
   font-size: 1.5rem;
+  /* padding: 8px; */
   color: var(--gray-dark);
   text-decoration: none;
 }
@@ -154,7 +157,7 @@ body {
   justify-content: space-between;
 }
 .price-before {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--gray-medium);
   text-decoration: line-through;
   margin: 0;
@@ -186,26 +189,62 @@ body {
   margin: 0;
 }
 
-.color ul {
+/* color and size */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (min-width: 770px) {
+  .select-option {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .select-option {
+    width: 32px;
+    height: 32px;
+  }
+}
+.select-option {
+  border: 1px solid var(--gray-medium);
+  border-radius: 4px;
+  display: block;
+  text-decoration: none;
+  color: var(--gray-medium);
+  text-align: center;
+}
+.select-option.active,
+.select-option:hover {
+  box-shadow: 0 0 0 3px white, 0 0 0 5px var(--gray-medium);
+  color: var(--gray-medium);
+}
+
+.option ul {
   list-style: none;
   display: flex;
+  gap: 16px;
   margin: 0;
   padding: 0;
 }
-.select-option {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  display: block;
+.option h4 {
+  color: var(--gray-medium);
 }
-.select-option.active {
-  box-shadow: 0 0 0 3px white, 0 0 0 5px var(--gray-medium);
+.color h4:before {
+  content: "color: ";
+  font-weight: 100;
+  vertical-align: (-50%);
+  color: var(--gray-dark);
 }
 .color-bdot1 {
   background: #cdb7f2;
 }
 .color-bdot2 {
   background: #6febf3;
+}
+.color-bdot3 {
+  background: #fff;
 }
 
 /* slider cards similar product */
