@@ -121,6 +121,31 @@ body {
 }
 
 /* options */
+.product-brand {
+  font-size: 1rem;
+  color: var(--gray-medium);
+  margin: 0;
+  padding: 0;
+}
+.product-name {
+  display: flex;
+  gap: 16px;
+}
+.product-name h1 {
+  font-size: 1.5rem;
+  color: var(--dark);
+  font-weight: 700;
+}
+.favorite {
+  font-size: 1.5rem;
+  color: var(--gray-dark);
+  text-decoration: none;
+}
+.favorite:focus,
+.favorite:hover {
+  color: var(--red);
+}
+
 .price {
   font-weight: 700;
   margin-top: 5px;
